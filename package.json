@@ -6,6 +6,8 @@
   "scripts": {
     "start": "tsc && node dist/index.js",
     "start:dev": "nodemon -e ts --exec \"npm run start\"",
+    "start:http-server": "http-server ./src",
+    "start:web": "nodemon -e html,js,css --exec \"npm run start:http-server\"",
     "build": "tsc",
     "test": "jest"
   },
